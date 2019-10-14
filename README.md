@@ -11,7 +11,7 @@ A compiled settings.jsx file is registered into the Fitbit mobile application du
 * Slider
 * Text Input Save
 * Clear Settings Storage
-* Add List Item
+* Add List Item (Auto-Complete)
 * Selection
 * Multi-Selection
 * Additive List
