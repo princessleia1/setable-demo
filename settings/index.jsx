@@ -47,26 +47,19 @@ function mySettings(props) {
         step="10"
         onChange={value => props.settingsStorage.setItem("slider", value)}
       />
+      <Toggle label="Enable Text Input" settingsKey="toggleTextInput" />
       <TextInput label="Text Example" settingsKey="text" />
       <TextInput
-        label="Text Example"
+        label="Enter Text"
         title="Text Input"
         settingsKey="textInput"
-        disabled={!(props.settings.toggleTextInput === "false")}
+        disabled={!(props.settings.toggleTextInput === "true")}
       />
       <Button
         list
         label="Clear Settings Storage"
         onClick={() => props.settingsStorage.clear()}
-      />
-      <TextInput label="Text Example" settingsKey="text" />
-      <TextInput
-        label="Text Example"
-        title="Text Input"
-        settingsKey="textInput"
-        disabled={!(props.settings.toggleTextInput === "true")}
-      />
-      <Toggle label="Enable Text Input" settingsKey="toggleTextInput" />
+      /> 
       <TextInput
         title="Add List Item Example"
         label="Item Name"
@@ -130,7 +123,7 @@ function mySettings(props) {
         title="Image Picker"
         description="Pick an image to use in this App."
         label="Pick an Image"
-        sublabel="Settings image picker"
+        sublabel="Settings image picker sub-label."
         imageWidth="300"
         imageHeight="300"
         onImagePicked={({ image, imageSize }) =>
@@ -139,8 +132,8 @@ function mySettings(props) {
       />
       <Section
         title={
-          <Text bold align="center">
-            Setable-Demo
+          <Text bold align="left">
+            Links | TextImageRow
           </Text>
         }
       >
@@ -166,7 +159,7 @@ function mySettings(props) {
           </Text>
         }
       >
-        <Text>v0.1.0 - Initial Pre-Release.</Text>
+        <Text>0.1.0 - Initial Pre-Release.</Text>
       </Section>
     </Page>
   );
