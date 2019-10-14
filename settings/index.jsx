@@ -4,7 +4,7 @@ function mySettings(props) {
       <Section
         title={
           <Text bold align="center">
-            Fitbit Settings Examples
+            Setable-Demo
           </Text>
         }
       >
@@ -24,8 +24,8 @@ function mySettings(props) {
       </Section>
       <Section>
         <Text>
-          This is a basic demo settings page to display some of the current
-          capabilities of the Companion Settings library.
+          A basic demo settings page to display examples of Companion Settings
+          library.
         </Text>
         <Text align="center" bold>
           Formatting Examples
@@ -36,20 +36,21 @@ function mySettings(props) {
           This text will be centered and <Text bold>bold</Text>
         </Text>
       </Section>
-        <Text>Slider Settings: {props.settingsStorage.getItem('Slider')}
-        </Text>
-       <Slider label="Slider Example" 
-          settingsKey="sliderValue" 
-          min="0" 
-          max="60"
-          step="10"
-          onChange={value => props.settingsStorage.setItem('Slider', value)} />
+      <Text>Slider Settings: {props.settingsStorage.getItem("slider")}</Text>
+      <Slider
+        label="Slider Example"
+        settingsKey="sliderValue"
+        min="0"
+        max="60"
+        step="10"
+        onChange={value => props.settingsStorage.setItem("slider", value)}
+      />
       <TextInput label="Text Example" settingsKey="text" />
       <TextInput
         label="Text Example"
         title="Text Input"
         settingsKey="textInput"
-        disabled={!(props.settings.toggleTextInput === "true")}
+        disabled={!(props.settings.toggleTextInput === "false")}
       />
       <Button
         list
@@ -134,28 +135,36 @@ function mySettings(props) {
           doSomethingWithImage(image, imageSize)
         }
       />
-       <Section
-        title={<Text bold align="center">Flash-Face</Text>}>
-         <Link source="https://github.com/princessleia1">
-           <TextImageRow
-             label="Github"
-             sublabel="https://github.com/princessleia1"
-             icon="https://github.com/princessleia1/flash-face/blob/master/resources/git-icon.png?raw=true"
-           />
-          </Link>
+      <Section
+        title={
+          <Text bold align="center">
+            Setable-Demo
+          </Text>
+        }
+      >
+        <Link source="https://github.com/princessleia1">
+          <TextImageRow
+            label="Github"
+            sublabel="https://github.com/princessleia1"
+            icon="https://github.com/princessleia1/setable-demo/blob/master/resources/git-icon.png?raw=true"
+          />
+        </Link>
         <Link source="https://www.paypal.me/KirsteneG">
           <TextImageRow
             label="PayPal"
             sublabel="paypal.me/KirsteneG"
-            icon="https://github.com/princessleia1/flash-face/blob/master/resources/pay-icon.png?raw=true"
-           />
+            icon="https://github.com/princessleia1/setable-demo/blob/master/resources/pay-icon.png?raw=true"
+          />
         </Link>
       </Section>
       <Section
-        title={<Text bold align="center">Build Version</Text>}>
-        <Text>
-          1.0.1 - Initial Pre-Release.
-        </Text>
+        title={
+          <Text bold align="center">
+            Build Version
+          </Text>
+        }
+      >
+        <Text>0.0.1 - Initial Pre-Release.</Text>
       </Section>
     </Page>
   );
