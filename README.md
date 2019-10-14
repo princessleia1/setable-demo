@@ -43,9 +43,6 @@ App received: {"data":{"key":"multiselection","newValue":"{\"values\":[{\"name\"
 ## Devices
 **Setable-Demo** is built for Fitbit Devices: Ionic (348x250).
 
-## License
-**Setable-Demo** is licensed under the terms of the [GPL-3.0 License](/LICENSE). 
-
 <p align="center">
   <img width="80" height="80" src=./resources/icon-80x80.png>
 </p>
