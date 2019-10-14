@@ -133,7 +133,7 @@ function mySettings(props) {
       <Section
         title={
           <Text bold align="left">
-            Links | TextImageRow
+            Links | Icons | TextImageRow
           </Text>
         }
       >
@@ -159,7 +159,7 @@ function mySettings(props) {
           </Text>
         }
       >
-        <Text>0.1.0 - Initial Pre-Release.</Text>
+        <Text>v0.1.0 - Initial Pre-Release.</Text>
       </Section>
     </Page>
   );
