@@ -5,7 +5,7 @@ import { me } from "companion";
 // Internet access 
 console.log("Application ID: " + me.applicationId);
 if (!me.permissions.granted("access_internet")) {
-   console.log("We're not allowed to access the internet :-(");
+   console.log("Not allowed to access the internet.");
 }
 else {
   console.log("The permission API is not yet supported in the Fitbit OS simulator. Fitbit will tell you this anyway.")
