@@ -166,7 +166,7 @@ function mySettings(props) {
           </Text>
         }
       >
-        <Text>v0.2.0 - Initial Pre-Release.</Text>
+        <Text>v0.1.0 - Initial Pre-Release.</Text>
       </Section>
     </Page>
   );
