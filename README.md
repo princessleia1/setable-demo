@@ -5,16 +5,19 @@
 A compiled settings.jsx file is registered into the Fitbit mobile application during the application installation process. The following offers a basic settings page to show capabilities of the Companion Settings Library:
 * Settings Toggle Switch
 * Background Colour Select
-* Basic Formatting
-* TextImageRow
-* Clear Settings Storage
-* Link
+* Basic Text Formatting
+* Enable Text Input Toggle
+* Slider Settings
 * Slider
+* Text Input Save
+* Clear Settings Storage
 * Add List Item
 * Selection
 * Multi-Selection
 * Additive List
 * Image Picker
+* Links
+* TextImageRow
 * Button
 
 ### Guides
