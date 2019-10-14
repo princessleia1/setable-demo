@@ -23,21 +23,21 @@ A compiled settings.jsx file is registered into the Fitbit mobile application du
 * [Fitbit Guide Companion](https://dev.fitbit.com/build/guides/companion/)
 * [Fitbit Companion API](https://dev.fitbit.com/build/reference/companion-api/)
 
-### Debug Outpu
+### Debug Output
 Slider:
 ```
-[12:23:58 PM]App received: {"data":{"key":"slider","newValue":"26"}}app/index.js:8,3
-[12:23:58 PM]App received: {"data":{"key":"slider","newValue":"12"}}app/index.js:8,3
-[12:23:59 PM]App received: {"data":{"key":"slider","newValue":"33"}}app/index.js:8,3
-[12:23:59 PM]App received: {"data":{"key":"slider","newValue":"34"}}
+App received: {"data":{"key":"slider","newValue":"26"}}app/index.js:8,3
+App received: {"data":{"key":"slider","newValue":"12"}}app/index.js:8,3
+App received: {"data":{"key":"slider","newValue":"33"}}app/index.js:8,3
+App received: {"data":{"key":"slider","newValue":"34"}}
 ```
 Single Selection:
 ```
-[12:32:47 PM]App received: {"data":{"key":"selection","newValue":"{\"values\":[{\"name\":\"Three\"}],\"selected\":[2]}"}}
+App received: {"data":{"key":"selection","newValue":"{\"values\":[{\"name\":\"Three\"}],\"selected\":[2]}"}}
 ```
 Multi-Selection:
 ```
-[12:30:55 PM]App received: {"data":{"key":"multiselection","newValue":"{\"values\":[{\"name\":\"One\",\"value\":\"1\"},{\"name\":\"Four\",\"value\":\"4\"},{\"name\":\"Seven\",\"value\":\"7\"}],\"selected\":[0,3,6]}"}}
+App received: {"data":{"key":"multiselection","newValue":"{\"values\":[{\"name\":\"One\",\"value\":\"1\"},{\"name\":\"Four\",\"value\":\"4\"},{\"name\":\"Seven\",\"value\":\"7\"}],\"selected\":[0,3,6]}"}}
 ```
 
 ## Devices
