@@ -1,5 +1,5 @@
-# Settings-Unit
-**Settings-Unit** is a Fitbit OS App that demos the capabilities of the Companion Settings Library. **Settings-Unit** uses [Fitbit SDK V3.1.0](https://github.com/Fitbit). 
+# Settings-Plus
+**Settings-Plus** is a Fitbit OS App that demos the capabilities of the Companion Settings Library. **Settings-Plus** uses [Fitbit SDK V3.1.0](https://github.com/Fitbit). 
 
 ## Features
 A compiled settings.jsx file is registered into the Fitbit mobile application during the application installation process. The following offers a basic settings page to show capabilities of the Companion Settings Library:
@@ -41,10 +41,10 @@ App received: {"data":{"key":"multiselection","newValue":"{\"values\":[{\"name\"
 ```
 
 ## Devices
-**Settings-Unit** is built for Fitbit Devices: Ionic (348x250).
+**Settings-Plus** is built for Fitbit Devices: Ionic (348x250).
 
 ## License
-**Settings-Unit** is licensed under the terms of the [GPL-3.0 License](/LICENSE). 
+**Settings-Plus** is licensed under the terms of the [GPL-3.0 License](/LICENSE). 
 
 <p align="center">
   <img width="80" height="80" src=./resources/icon-80x80.png>
