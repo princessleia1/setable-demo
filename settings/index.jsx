@@ -63,7 +63,7 @@ function mySettings(props) {
       <TextInput
         title="Add List Item Example"
         label="Item Name"
-        placeholder="Type input for auto-complete i.e., ora"
+        placeholder="Enter text for auto-complete i.e., ora"
         action="Add Item"
         onAutocomplete={value => {
           const autoValues = [
@@ -105,6 +105,7 @@ function mySettings(props) {
         ]}
       />
       <AdditiveList
+        title={`Additive List Example`}
         settingsKey="additive"
         addAction={
           <Select
@@ -120,7 +121,7 @@ function mySettings(props) {
         }
       />
       <ImagePicker
-        title="Image Picker"
+        title="Image Picker Example"
         description="Pick an image to use in this App."
         label="Pick an Image"
         sublabel="Settings image picker sub-label."
@@ -133,7 +134,7 @@ function mySettings(props) {
       <Section
         title={
           <Text bold align="left">
-            Links | Icons | TextImageRow
+            Links Icons TextImageRow Examples
           </Text>
         }
       >
@@ -159,7 +160,7 @@ function mySettings(props) {
           </Text>
         }
       >
-        <Text>v0.1.0 - Initial Pre-Release.</Text>
+        <Text>v1.0.0-alpha - Initial Release.</Text>
       </Section>
     </Page>
   );
