@@ -13,20 +13,22 @@ function mySettings(props) {
           centered={true}
           settingsKey="color"
           colors={[
+            { color: "crimson" },
             { color: "tomato" },
+            { color: "pink" },
             { color: "sandybrown" },
             { color: "gold" },
+            { color: "yellow" },
+            { color: "greenyellow" },
             { color: "aquamarine" },
-            { color: "deepskyblue" },
+            { color: "darkturquoise" },
+            { color: "darkcyan" },
+            { color: "slategray" },
             { color: "white" }
           ]}
         />
       </Section>
       <Section>
-        <Text>
-          A basic demo settings page to display examples of Companion Settings
-          library.
-        </Text>
         <Text align="center" bold>
           Formatting Examples
         </Text>
@@ -164,7 +166,7 @@ function mySettings(props) {
           </Text>
         }
       >
-        <Text>0.0.1 - Initial Pre-Release.</Text>
+        <Text>v0.2.0 - Initial Pre-Release.</Text>
       </Section>
     </Page>
   );
