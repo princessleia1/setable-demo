@@ -44,7 +44,7 @@ function mySettings(props) {
         settingsKey="sliderValue"
         min="0"
         max="60"
-        step="10"
+        step="5"
         onChange={value => props.settingsStorage.setItem("slider", value)}
       />
       <Toggle label="Enable Text Input" settingsKey="toggleTextInput" />
@@ -63,7 +63,7 @@ function mySettings(props) {
       <TextInput
         title="Add List Item Example"
         label="Item Name"
-        placeholder="Type something"
+        placeholder="Type input for auto-complete i.e., ora"
         action="Add Item"
         onAutocomplete={value => {
           const autoValues = [
