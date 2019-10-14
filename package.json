@@ -2,7 +2,7 @@
   "fitbit": {
     "appUUID": "8bfcc488-26c2-44b9-98dd-f9acfe309365",
     "appType": "app",
-    "appDisplayName": "Flash-Face",
+    "appDisplayName": "Setable-Demo",
     "iconFile": "resources/icon.png",
     "wipeColor": "#ff5722",
     "requestedPermissions": [],
