@@ -2,6 +2,13 @@ import * as messaging from "messaging";
 import { settingsStorage } from "settings";
 import { me } from "companion";
 
+// Peer application launch
+if (me.launchReasons.peerAppLaunched) {
+  // The Device application caused the Companion to start
+  console.log("Device application was launched!")
+}
+
+// Wake Interval 
 // Helper
 const MILLISECONDS_PER_MINUTE = 1000 * 60
 
@@ -11,6 +18,12 @@ me.wakeInterval = 30 * MILLISECONDS_PER_MINUTE
 // Cancel the wakeInterval timer
 // 0, null, undefined - default = undefined
 me.wakeInterval = 31 * MILLISECONDS_PER_MINUTE
+
+// Significant location changes ==> 5 km
+// Monitor for significant changes in physical location
+// The onsignificantlocationchange event is emitted if the companion has indicated that it 
+// should be woken when the device has changed physical location.
+me.monitorSignificantLocationChanges = true // or false
 
 // Internet access 
 console.log("Application ID: " + me.applicationId);
