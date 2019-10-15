@@ -2,6 +2,16 @@ import * as messaging from "messaging";
 import { settingsStorage } from "settings";
 import { me } from "companion";
 
+// Helper
+const MILLISECONDS_PER_MINUTE = 1000 * 60
+
+// Wake the Companion after 30 minutes
+me.wakeInterval = 30 * MILLISECONDS_PER_MINUTE
+
+// Cancel the wakeInterval timer
+// 0, null, undefined - default = undefined
+me.wakeInterval = 31 * MILLISECONDS_PER_MINUTE
+
 // Internet access 
 console.log("Application ID: " + me.applicationId);
 if (!me.permissions.granted("access_internet")) {
