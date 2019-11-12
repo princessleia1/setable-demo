@@ -8,6 +8,15 @@ if (me.launchReasons.peerAppLaunched) {
   console.log("Device application was launched!")
 }
 
+// Launch location changes
+if (me.launchReasons.locationChanged) {
+  // The companion was started due to a significant change in physical location
+  console.log("Significant location change!")
+  var pos = me.launchReasons.locationChanged.position
+  console.log("Latitude: " + pos.coords.latitude,
+              "Longitude: " + pos.coords.longitude)
+}
+
 // Wake Interval 
 // Helper
 const MILLISECONDS_PER_MINUTE = 1000 * 60
@@ -24,6 +33,9 @@ me.wakeInterval = 31 * MILLISECONDS_PER_MINUTE
 // The onsignificantlocationchange event is emitted if the companion has indicated that it 
 // should be woken when the device has changed physical location.
 me.monitorSignificantLocationChanges = true // or false
+
+
+
 
 // Internet access 
 console.log("Application ID: " + me.applicationId);
