@@ -34,9 +34,6 @@ me.wakeInterval = 31 * MILLISECONDS_PER_MINUTE
 // should be woken when the device has changed physical location.
 me.monitorSignificantLocationChanges = true // or false
 
-
-
-
 // Internet access 
 console.log("Application ID: " + me.applicationId);
 if (!me.permissions.granted("access_internet")) {
@@ -98,5 +95,3 @@ function sendVal(data) {
     messaging.peerSocket.send(data);
   }
 }
-
-
